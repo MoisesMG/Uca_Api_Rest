@@ -16,6 +16,6 @@ public interface ApiInterface {
     @GET("tweets")
     Call<List <TweetModel>> getTweets();
 
-    @POST("")
+    @POST("tweets")
     Call<TweetModel> setTweet(@Body TweetModel tweetModel);
 }//fin de la clase

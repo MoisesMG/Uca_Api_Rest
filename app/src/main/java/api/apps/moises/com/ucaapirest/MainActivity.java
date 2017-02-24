@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         getData();
+        setData("Mi nombre es Moises. :)");
     }//fin del metodo
 
     private void setData(String text){
@@ -31,6 +32,8 @@ public class MainActivity extends AppCompatActivity {
             public void onResponse(Call<TweetModel> call, Response<TweetModel> response) {
                 if(response != null){
                     Log.i(TAG, response.body().getText());
+                }else{
+                    Log.i(TAG, "error en la peticion");
                 }
             }//fin del metodo
 

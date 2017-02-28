@@ -1,5 +1,6 @@
 package api.apps.moises.com.ucaapirest;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -8,6 +9,7 @@ import java.util.List;
 
 import api.apps.moises.com.ucaapirest.api.Api;
 import api.apps.moises.com.ucaapirest.models.TweetModel;
+import api.apps.moises.com.ucaapirest.ui.activities.SignUpActivity;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -21,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         getData();
         setData("Mi nombre es Moises. :)");
+        Intent intent = new Intent(getApplicationContext(), SignUpActivity.class);
+        startActivity(intent);
     }//fin del metodo
 
     private void setData(String text){

@@ -3,6 +3,7 @@ package api.apps.moises.com.ucaapirest.api;
 import java.util.List;
 
 import api.apps.moises.com.ucaapirest.models.TweetModel;
+import api.apps.moises.com.ucaapirest.models.UserModel;
 import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.GET;
@@ -18,4 +19,7 @@ public interface ApiInterface {
 
     @POST("tweets")
     Call<TweetModel> setTweet(@Body TweetModel tweetModel);
+
+    @POST("Users")
+    Call<UserModel> signup(@Body UserModel userModel);
 }//fin de la clase

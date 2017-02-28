@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">UCA Api Rest</string>
+    <!-- Siup up -->
+    <string name="activity_sign_up_email">Correo electronico</string>
+    <string name="password">Contraseña</string>
+    <string name="signup">Registrarme</string>
+    <string name="signin">Iniciar sesión</string>
+    <string name="email_required">Muyerx, pasma el correo</string>
+    <string name="password_requered">Comadra, pasame la contraseña</string>
 </resources>
